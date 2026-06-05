@@ -74,3 +74,14 @@ See [`docs/llms-install.md`](docs/llms-install.md) for copy/paste configuration 
 ## License
 
 Documentation in this repository is released under the MIT License. SkinKnowledgeBase website content remains subject to the website terms.
+## Glama / local scanner bridge
+
+This repository includes a minimal `Dockerfile` for MCP registries that require a runnable container. It starts `mcp-remote` and bridges local MCP stdio introspection to the hosted SkinKnowledgeBase endpoint:
+
+```bash
+docker build -t skb-mcp .
+docker run --rm -i skb-mcp
+```
+
+The source of truth remains the hosted read-only MCP endpoint: `https://mcp.skinknowledgebase.com/mcp`.
+
