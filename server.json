@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.skinknowledgebase/skb-mcp",
+  "title": "SkinKnowledgeBase Skincare Question and Answer MCP",
+  "description": "Skincare Question and Answer with cited products, ingredients, sources, and comparison context.",
+  "version": "0.2.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.skinknowledgebase.com/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://skinknowledgebase.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://skinknowledgebase.com/skb-logo-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/fulcrai/skb-mcp",
+    "source": "github"
+  },
+  "_meta": {
+    "com.skinknowledgebase/profile": {
+      "site": "https://skinknowledgebase.com",
+      "aiAccess": "https://skinknowledgebase.com/ai-access",
+      "developerDocs": "https://skinknowledgebase.com/developers",
+      "privacyPolicy": "https://skinknowledgebase.com/privacy",
+      "terms": "https://skinknowledgebase.com/terms",
+      "contact": "https://skinknowledgebase.com/contact",
+      "serverCard": "https://mcp.skinknowledgebase.com/.well-known/mcp/server-card.json",
+      "tags": ["skincare", "question-answering", "citations", "product-comparison", "read-only"]
+    }
+  }
+}

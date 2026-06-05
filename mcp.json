@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "skinknowledgebase": {
+      "url": "https://mcp.skinknowledgebase.com/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}
